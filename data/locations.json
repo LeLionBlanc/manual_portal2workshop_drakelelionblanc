@@ -5,6 +5,14 @@
       "name": "Test Chamber #N",
       "category": [],
       "requires": ""
+    },
+    {
+      "name": "Graduation Ceremony",
+      "category": [
+        "Graduation"
+      ],
+      "requires": "|Aperture Gel Mastery:1| and |Portal Gun Expert:1| and |Laser Redirection Master:1| and |Turret Evasion Diploma:1| and |Trivia Cube Champion:1|",
+      "victory": true
     }
   ]
 }

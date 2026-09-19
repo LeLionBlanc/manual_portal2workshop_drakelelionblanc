@@ -10,10 +10,42 @@
       "progression": true
     },
     {
-      "count": "28",
-      "name": "Good Performance",
+      "count": "1",
+      "name": "Aperture Gel Mastery",
       "category": [
-        "Performance"
+        "Graduation"
+      ],
+      "progression": true
+    },
+    {
+      "count": "1",
+      "name": "Portal Gun Expert",
+      "category": [
+        "Graduation"
+      ],
+      "progression": true
+    },
+    {
+      "count": "1",
+      "name": "Laser Redirection Master",
+      "category": [
+        "Graduation"
+      ],
+      "progression": true
+    },
+    {
+      "count": "1",
+      "name": "Turret Evasion Diploma",
+      "category": [
+        "Graduation"
+      ],
+      "progression": true
+    },
+    {
+      "count": "1",
+      "name": "Trivia Cube Champion",
+      "category": [
+        "Graduation"
       ],
       "progression": true
     },
