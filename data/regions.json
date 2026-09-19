@@ -1,0 +1,14 @@
+{
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.regions.schema.json",
+  "Enrichment Center": {
+    "connects_to": [
+      "Test Shaft 09"
+    ],
+    "starting": true,
+    "requires": ""
+  },
+  "Test Shaft 09": {
+    "connects_to": [],
+    "requires": "|Advanced Testing Clearance:1|"
+  }
+}

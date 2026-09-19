@@ -1,0 +1,45 @@
+{
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.items.schema.json",
+  "data": [
+    {
+      "count": "60",
+      "name": "Chamber Access",
+      "category": [
+        "Access"
+      ],
+      "progression": true
+    },
+    {
+      "count": "28",
+      "name": "Good Performance",
+      "category": [
+        "Performance"
+      ],
+      "progression": true
+    },
+    {
+      "count": "3",
+      "name": "Advanced Testing Clearance",
+      "category": [
+        "Clearance"
+      ],
+      "progression": true
+    },
+    {
+      "count": "4",
+      "name": "Auto-Win Chamber",
+      "category": [
+        "Consumables"
+      ],
+      "useful": true
+    },
+    {
+      "count": "2",
+      "name": "Force Reset",
+      "category": [
+        "Trap"
+      ],
+      "trap": true
+    }
+  ]
+}
