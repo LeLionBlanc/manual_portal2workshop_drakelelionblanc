@@ -1,14 +1,32 @@
 {
   "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.regions.schema.json",
-  "Enrichment Center": {
-    "connects_to": [
-      "Test Shaft 09"
-    ],
+  "Aperture Science Test Rooms": {
     "starting": true,
-    "requires": ""
+    "requires": "",
+    "connects_to": [
+      "Personal Glad0s Test"
+    ]
   },
-  "Test Shaft 09": {
-    "connects_to": [],
-    "requires": "|Advanced Testing Clearance:1|"
+  "Personal Glad0s Test": {
+    "requires": "|Advanced Testing Clearance:1|",
+    "connects_to": [
+      "Old Aperture Rooms"
+    ]
+  },
+  "Old Aperture Rooms": {
+    "requires": "|Advanced Testing Clearance:2|",
+    "connects_to": [
+      "Wheatley's Chaotic Tests"
+    ]
+  },
+  "Wheatley's Chaotic Tests": {
+    "requires": "|Advanced Testing Clearance:3|",
+    "connects_to": [
+      "Final Exam"
+    ]
+  },
+  "Final Exam": {
+    "requires": "|@Graduation:5|",
+    "connects_to": []
   }
 }

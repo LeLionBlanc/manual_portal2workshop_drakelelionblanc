@@ -2,16 +2,588 @@
   "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.locations.schema.json",
   "data": [
     {
-      "name": "Test Chamber #N",
-      "category": [],
+      "name": "Aperture Science Test Rooms - Chamber 01",
+      "region": "Aperture Science Test Rooms",
+      "category": [
+        "Chambers",
+        "Aperture Science Test Rooms"
+      ],
+      "requires": "|Chamber Access:1|"
+    },
+    {
+      "name": "Aperture Science Test Rooms - Chamber 02",
+      "region": "Aperture Science Test Rooms",
+      "category": [
+        "Chambers",
+        "Aperture Science Test Rooms"
+      ],
+      "requires": "|Chamber Access:2|"
+    },
+    {
+      "name": "Aperture Science Test Rooms - Chamber 03",
+      "region": "Aperture Science Test Rooms",
+      "category": [
+        "Chambers",
+        "Aperture Science Test Rooms"
+      ],
+      "requires": "|Chamber Access:3|"
+    },
+    {
+      "name": "Aperture Science Test Rooms - Chamber 04",
+      "region": "Aperture Science Test Rooms",
+      "category": [
+        "Chambers",
+        "Aperture Science Test Rooms"
+      ],
+      "requires": "|Chamber Access:4|"
+    },
+    {
+      "name": "Aperture Science Test Rooms - Chamber 05",
+      "region": "Aperture Science Test Rooms",
+      "category": [
+        "Chambers",
+        "Aperture Science Test Rooms"
+      ],
+      "requires": "|Chamber Access:5|"
+    },
+    {
+      "name": "Aperture Science Test Rooms - Chamber 06",
+      "region": "Aperture Science Test Rooms",
+      "category": [
+        "Chambers",
+        "Aperture Science Test Rooms"
+      ],
+      "requires": "|Chamber Access:6|"
+    },
+    {
+      "name": "Aperture Science Test Rooms - Chamber 07",
+      "region": "Aperture Science Test Rooms",
+      "category": [
+        "Chambers",
+        "Aperture Science Test Rooms"
+      ],
+      "requires": "|Chamber Access:7|"
+    },
+    {
+      "name": "Aperture Science Test Rooms - Chamber 08",
+      "region": "Aperture Science Test Rooms",
+      "category": [
+        "Chambers",
+        "Aperture Science Test Rooms"
+      ],
+      "requires": "|Chamber Access:8|"
+    },
+    {
+      "name": "Aperture Science Test Rooms - Chamber 09",
+      "region": "Aperture Science Test Rooms",
+      "category": [
+        "Chambers",
+        "Aperture Science Test Rooms"
+      ],
+      "requires": "|Chamber Access:9|"
+    },
+    {
+      "name": "Aperture Science Test Rooms - Chamber 10",
+      "region": "Aperture Science Test Rooms",
+      "category": [
+        "Chambers",
+        "Aperture Science Test Rooms"
+      ],
+      "requires": "|Chamber Access:10|"
+    },
+    {
+      "name": "Aperture Science Test Rooms - Chamber 11",
+      "region": "Aperture Science Test Rooms",
+      "category": [
+        "Chambers",
+        "Aperture Science Test Rooms"
+      ],
+      "requires": "|Chamber Access:11|"
+    },
+    {
+      "name": "Aperture Science Test Rooms - Chamber 12",
+      "region": "Aperture Science Test Rooms",
+      "category": [
+        "Chambers",
+        "Aperture Science Test Rooms"
+      ],
+      "requires": "|Chamber Access:12|"
+    },
+    {
+      "name": "Personal Glad0s Test - Chamber 13",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Chambers",
+        "Personal Glad0s Test"
+      ],
+      "requires": "|Chamber Access:13|"
+    },
+    {
+      "name": "Personal Glad0s Test - Chamber 14",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Chambers",
+        "Personal Glad0s Test"
+      ],
+      "requires": "|Chamber Access:14|"
+    },
+    {
+      "name": "Personal Glad0s Test - Chamber 15",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Chambers",
+        "Personal Glad0s Test"
+      ],
+      "requires": "|Chamber Access:15|"
+    },
+    {
+      "name": "Personal Glad0s Test - Chamber 16",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Chambers",
+        "Personal Glad0s Test"
+      ],
+      "requires": "|Chamber Access:16|"
+    },
+    {
+      "name": "Personal Glad0s Test - Chamber 17",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Chambers",
+        "Personal Glad0s Test"
+      ],
+      "requires": "|Chamber Access:17|"
+    },
+    {
+      "name": "Personal Glad0s Test - Chamber 18",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Chambers",
+        "Personal Glad0s Test"
+      ],
+      "requires": "|Chamber Access:18|"
+    },
+    {
+      "name": "Personal Glad0s Test - Chamber 19",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Chambers",
+        "Personal Glad0s Test"
+      ],
+      "requires": "|Chamber Access:19|"
+    },
+    {
+      "name": "Personal Glad0s Test - Chamber 20",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Chambers",
+        "Personal Glad0s Test"
+      ],
+      "requires": "|Chamber Access:20|"
+    },
+    {
+      "name": "Personal Glad0s Test - Chamber 21",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Chambers",
+        "Personal Glad0s Test"
+      ],
+      "requires": "|Chamber Access:21|"
+    },
+    {
+      "name": "Personal Glad0s Test - Chamber 22",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Chambers",
+        "Personal Glad0s Test"
+      ],
+      "requires": "|Chamber Access:22|"
+    },
+    {
+      "name": "Personal Glad0s Test - Chamber 23",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Chambers",
+        "Personal Glad0s Test"
+      ],
+      "requires": "|Chamber Access:23|"
+    },
+    {
+      "name": "Personal Glad0s Test - Chamber 24",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Chambers",
+        "Personal Glad0s Test"
+      ],
+      "requires": "|Chamber Access:24|"
+    },
+    {
+      "name": "Personal Glad0s Test - Chamber 25",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Chambers",
+        "Personal Glad0s Test"
+      ],
+      "requires": "|Chamber Access:25|"
+    },
+    {
+      "name": "Personal Glad0s Test - Chamber 26",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Chambers",
+        "Personal Glad0s Test"
+      ],
+      "requires": "|Chamber Access:26|"
+    },
+    {
+      "name": "Old Aperture Rooms - Chamber 27",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Chambers",
+        "Old Aperture Rooms"
+      ],
+      "requires": "|Chamber Access:27|"
+    },
+    {
+      "name": "Old Aperture Rooms - Chamber 28",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Chambers",
+        "Old Aperture Rooms"
+      ],
+      "requires": "|Chamber Access:28|"
+    },
+    {
+      "name": "Old Aperture Rooms - Chamber 29",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Chambers",
+        "Old Aperture Rooms"
+      ],
+      "requires": "|Chamber Access:29|"
+    },
+    {
+      "name": "Old Aperture Rooms - Chamber 30",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Chambers",
+        "Old Aperture Rooms"
+      ],
+      "requires": "|Chamber Access:30|"
+    },
+    {
+      "name": "Old Aperture Rooms - Chamber 31",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Chambers",
+        "Old Aperture Rooms"
+      ],
+      "requires": "|Chamber Access:31|"
+    },
+    {
+      "name": "Old Aperture Rooms - Chamber 32",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Chambers",
+        "Old Aperture Rooms"
+      ],
+      "requires": "|Chamber Access:32|"
+    },
+    {
+      "name": "Old Aperture Rooms - Chamber 33",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Chambers",
+        "Old Aperture Rooms"
+      ],
+      "requires": "|Chamber Access:33|"
+    },
+    {
+      "name": "Old Aperture Rooms - Chamber 34",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Chambers",
+        "Old Aperture Rooms"
+      ],
+      "requires": "|Chamber Access:34|"
+    },
+    {
+      "name": "Old Aperture Rooms - Chamber 35",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Chambers",
+        "Old Aperture Rooms"
+      ],
+      "requires": "|Chamber Access:35|"
+    },
+    {
+      "name": "Old Aperture Rooms - Chamber 36",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Chambers",
+        "Old Aperture Rooms"
+      ],
+      "requires": "|Chamber Access:36|"
+    },
+    {
+      "name": "Old Aperture Rooms - Chamber 37",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Chambers",
+        "Old Aperture Rooms"
+      ],
+      "requires": "|Chamber Access:37|"
+    },
+    {
+      "name": "Old Aperture Rooms - Chamber 38",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Chambers",
+        "Old Aperture Rooms"
+      ],
+      "requires": "|Chamber Access:38|"
+    },
+    {
+      "name": "Wheatley's Chaotic Tests - Chamber 39",
+      "region": "Wheatley's Chaotic Tests",
+      "category": [
+        "Chambers",
+        "Wheatley's Chaotic Tests"
+      ],
+      "requires": "|Chamber Access:39|"
+    },
+    {
+      "name": "Wheatley's Chaotic Tests - Chamber 40",
+      "region": "Wheatley's Chaotic Tests",
+      "category": [
+        "Chambers",
+        "Wheatley's Chaotic Tests"
+      ],
+      "requires": "|Chamber Access:40|"
+    },
+    {
+      "name": "Wheatley's Chaotic Tests - Chamber 41",
+      "region": "Wheatley's Chaotic Tests",
+      "category": [
+        "Chambers",
+        "Wheatley's Chaotic Tests"
+      ],
+      "requires": "|Chamber Access:41|"
+    },
+    {
+      "name": "Wheatley's Chaotic Tests - Chamber 42",
+      "region": "Wheatley's Chaotic Tests",
+      "category": [
+        "Chambers",
+        "Wheatley's Chaotic Tests"
+      ],
+      "requires": "|Chamber Access:42|"
+    },
+    {
+      "name": "Wheatley's Chaotic Tests - Chamber 43",
+      "region": "Wheatley's Chaotic Tests",
+      "category": [
+        "Chambers",
+        "Wheatley's Chaotic Tests"
+      ],
+      "requires": "|Chamber Access:43|"
+    },
+    {
+      "name": "Wheatley's Chaotic Tests - Chamber 44",
+      "region": "Wheatley's Chaotic Tests",
+      "category": [
+        "Chambers",
+        "Wheatley's Chaotic Tests"
+      ],
+      "requires": "|Chamber Access:44|"
+    },
+    {
+      "name": "Wheatley's Chaotic Tests - Chamber 45",
+      "region": "Wheatley's Chaotic Tests",
+      "category": [
+        "Chambers",
+        "Wheatley's Chaotic Tests"
+      ],
+      "requires": "|Chamber Access:45|"
+    },
+    {
+      "name": "Wheatley's Chaotic Tests - Chamber 46",
+      "region": "Wheatley's Chaotic Tests",
+      "category": [
+        "Chambers",
+        "Wheatley's Chaotic Tests"
+      ],
+      "requires": "|Chamber Access:46|"
+    },
+    {
+      "name": "Wheatley's Chaotic Tests - Chamber 47",
+      "region": "Wheatley's Chaotic Tests",
+      "category": [
+        "Chambers",
+        "Wheatley's Chaotic Tests"
+      ],
+      "requires": "|Chamber Access:47|"
+    },
+    {
+      "name": "Wheatley's Chaotic Tests - Chamber 48",
+      "region": "Wheatley's Chaotic Tests",
+      "category": [
+        "Chambers",
+        "Wheatley's Chaotic Tests"
+      ],
+      "requires": "|Chamber Access:48|"
+    },
+    {
+      "name": "Wheatley's Chaotic Tests - Chamber 49",
+      "region": "Wheatley's Chaotic Tests",
+      "category": [
+        "Chambers",
+        "Wheatley's Chaotic Tests"
+      ],
+      "requires": "|Chamber Access:49|"
+    },
+    {
+      "name": "Wheatley's Chaotic Tests - Chamber 50",
+      "region": "Wheatley's Chaotic Tests",
+      "category": [
+        "Chambers",
+        "Wheatley's Chaotic Tests"
+      ],
+      "requires": "|Chamber Access:50|"
+    },
+    {
+      "name": "Aperture Science Test Rooms - First Portal Placed",
+      "region": "Aperture Science Test Rooms",
+      "category": [
+        "Milestones",
+        "Aperture Science Test Rooms"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Aperture Science Test Rooms - Companion Cube Incinerated",
+      "region": "Aperture Science Test Rooms",
+      "category": [
+        "Milestones",
+        "Aperture Science Test Rooms"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Aperture Science Test Rooms - Turret Chorus Heard",
+      "region": "Aperture Science Test Rooms",
+      "category": [
+        "Milestones",
+        "Aperture Science Test Rooms"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Personal Glad0s Test - Overgrown Chamber Cleared",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Milestones",
+        "Personal Glad0s Test"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Personal Glad0s Test - Ratman Den Found",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Milestones",
+        "Personal Glad0s Test"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Personal Glad0s Test - Faith Plate Launch",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Milestones",
+        "Personal Glad0s Test"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Personal Glad0s Test - Portal Through Glass",
+      "region": "Personal Glad0s Test",
+      "category": [
+        "Milestones",
+        "Personal Glad0s Test"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Old Aperture Rooms - Repulsion Gel Bounce",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Milestones",
+        "Old Aperture Rooms"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Old Aperture Rooms - Propulsion Gel Sprint",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Milestones",
+        "Old Aperture Rooms"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Old Aperture Rooms - Conversion Gel Painted",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Milestones",
+        "Old Aperture Rooms"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Old Aperture Rooms - Cave Johnson Recording Heard",
+      "region": "Old Aperture Rooms",
+      "category": [
+        "Milestones",
+        "Old Aperture Rooms"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Wheatley's Chaotic Tests - Jury-Rigged Chamber Cleared",
+      "region": "Wheatley's Chaotic Tests",
+      "category": [
+        "Milestones",
+        "Wheatley's Chaotic Tests"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Wheatley's Chaotic Tests - Excursion Funnel Ride",
+      "region": "Wheatley's Chaotic Tests",
+      "category": [
+        "Milestones",
+        "Wheatley's Chaotic Tests"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Wheatley's Chaotic Tests - Wheatley Insult Endured",
+      "region": "Wheatley's Chaotic Tests",
+      "category": [
+        "Milestones",
+        "Wheatley's Chaotic Tests"
+      ],
       "requires": ""
     },
     {
       "name": "Graduation Ceremony",
+      "region": "Final Exam",
       "category": [
         "Graduation"
       ],
-      "requires": "|Aperture Gel Mastery:1| and |Portal Gun Expert:1| and |Laser Redirection Master:1| and |Turret Evasion Diploma:1| and |Trivia Cube Champion:1|",
+      "requires": "",
       "victory": true
     }
   ]

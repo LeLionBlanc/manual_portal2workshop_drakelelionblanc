@@ -31,6 +31,25 @@ import logging
 ########################################################################################
 
 
+CHAMBER_REGIONS = [
+    ("Aperture Science Test Rooms", 1, 12),
+    ("Personal Glad0s Test", 13, 26),
+    ("Old Aperture Rooms", 27, 38),
+    ("Wheatley's Chaotic Tests", 39, 50),
+]
+MAX_CHAMBER_TOTAL = 50
+
+
+def chamber_location_name(number: int) -> str:
+    for region, start, end in CHAMBER_REGIONS:
+        if start <= number <= end:
+            return f"{region} - Chamber {number:02d}"
+    raise ValueError(f"No region holds chamber {number}")
+
+
+def chambers_kept(world: World, multiworld: MultiWorld, player: int) -> int:
+    return max(1, min(MAX_CHAMBER_TOTAL, get_option_value(multiworld, player, "chamber_count")))
+
 
 # Use this function to change the valid filler items to be created to replace item links or starting items.
 # Default value is the `filler_item_name` from game.json
@@ -53,7 +72,10 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to remove locations from the world
     locationNamesToRemove: list[str] = [] # List of location names
 
-    # Add your code here to calculate which locations to remove
+    # Trim the chamber ladder down to the player's chamber_count. Chambers are dropped from the
+    # top, so the remaining ones keep a contiguous Chamber Access cost of 1..chamber_count.
+    for number in range(chambers_kept(world, multiworld, player) + 1, MAX_CHAMBER_TOTAL + 1):
+        locationNamesToRemove.append(chamber_location_name(number))
 
     for region in multiworld.regions:
         if region.player == player:
@@ -70,6 +92,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 #       will create 5 items that are the "useful trap" class
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
+    item_config["Chamber Access"] = chambers_kept(world, multiworld, player)
     return item_config
 
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage
