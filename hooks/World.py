@@ -35,16 +35,22 @@ import re
 MAX_PER_REGION = 13
 MIN_PER_REGION = 3
 
-CHAMBER_REGIONS = [
-    "Enrichment Center",
-    "Personal Glad0s Test",
-    "Old Aperture Rooms",
-    "Wheatley's Chaotic Tests",
-]
+MAX_FINAL_CHAMBERS = 5
+MIN_FINAL_CHAMBERS = 1
+
+REGION_KEY_ITEM = {
+    "Enrichment Center": "Enrichment Center Key",
+    "Personal Glad0s Test": "Glad0s Testing Key",
+    "Old Aperture Rooms": "Old Aperture Key",
+    "Wheatley's Chaotic Tests": "Wheatley Maintenance Key",
+}
+
+CHAMBER_REGIONS = list(REGION_KEY_ITEM)
 
 CHAMBER_NAME_RE = re.compile(r"^(?P<region>.+) - Test Chamber #(?P<number>\d+)$")
 
 TUTORIAL_REGION = "Relaxation Vault"
+FINAL_REGION = "Final Exam"
 
 
 def chamber_total(multiworld: MultiWorld, player: int) -> int:
@@ -59,8 +65,20 @@ def chambers_per_region(multiworld: MultiWorld, player: int) -> dict[str, int]:
     return {region: base + (1 if index < remainder else 0) for index, region in enumerate(regions)}
 
 
-def compute_access_copies(multiworld: MultiWorld, player: int) -> int:
-    return max(chambers_per_region(multiworld, player).values())
+def final_chamber_count(multiworld: MultiWorld, player: int) -> int:
+    requested = get_option_value(multiworld, player, "final_exam_count")
+    return max(MIN_FINAL_CHAMBERS, min(MAX_FINAL_CHAMBERS, requested))
+
+
+def chamber_allocation(multiworld: MultiWorld, player: int) -> dict[str, int]:
+    allocation = chambers_per_region(multiworld, player)
+    allocation[FINAL_REGION] = final_chamber_count(multiworld, player)
+    return allocation
+
+
+def compute_key_copies(multiworld: MultiWorld, player: int) -> dict[str, int]:
+    allocation = chambers_per_region(multiworld, player)
+    return {REGION_KEY_ITEM[region]: count for region, count in allocation.items()}
 
 
 # Use this function to change the valid filler items to be created to replace item links or starting items.
@@ -82,8 +100,8 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 
-    ## Chamber allocation 
-    allocation = chambers_per_region(multiworld, player)
+    # Chamber allocation
+    allocation = chamber_allocation(multiworld, player)
 
     for region in multiworld.regions:
         if region.player != player:
@@ -118,16 +136,18 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 #       will create 5 items that are the "useful trap" class
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
-    item_config["Chamber Access"] = compute_access_copies(multiworld, player)
+    key_copies = compute_key_copies(multiworld, player)
+    for key_name, copies in key_copies.items():
+        item_config[key_name] = copies
 
     fillable = len([loc for loc in multiworld.get_locations(player) if loc.address is not None])
 
     fixed_progression = sum(
         int(item.get("count", 1))
         for item in world.item_name_to_item.values()
-        if item.get("progression") and item["name"] != "Chamber Access"
+        if item.get("progression") and "Keys" not in item.get("category", [])
     )
-    budget = max(0, fillable - item_config["Chamber Access"] - fixed_progression)
+    budget = max(0, fillable - sum(key_copies.values()) - fixed_progression)
     # Items
     item_config["Auto-Win Chamber"] = max(1, round(budget * 0.20))
     item_config["Second Chance"] = max(1, round(budget * 0.20))

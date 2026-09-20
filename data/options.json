@@ -18,6 +18,17 @@
                 "full": 52
             },
             "group": "Portal 2 Workshop"
+        },
+        "final_exam_count": {
+            "display_name": "Final Exam Chambers",
+            "description": [
+                "How many maps you must clear inside the Final Exam before the Graduation Ceremony. Min: 1 Max: 5. They are on top of chamber_count, and they only open once you hold all five Diplomas."
+            ],
+            "type": "Range",
+            "range_start": 1,
+            "range_end": 5,
+            "default": 1,
+            "group": "Portal 2 Workshop"
         }
     }
 }

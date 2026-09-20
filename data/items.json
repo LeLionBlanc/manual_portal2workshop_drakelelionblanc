@@ -4,10 +4,31 @@
   "data": [
     {
       "count": "13",
-      "name": "Chamber Access",
-      "category": ["Access"],
+      "name": "Enrichment Center Key",
+      "category": ["Keys"],
       "progression": true,
-      "_comment": "Test Chamber #k needs k copies, in every region. Count (hook) = ceil(chamber_count / 4)."
+      "_comment": "Enrichment Center - Test Chamber #k needs k copies. Count (hook) = chambers in that region."
+    },
+    {
+      "count": "13",
+      "name": "Glad0s Testing Key",
+      "category": ["Keys"],
+      "progression": true,
+      "_comment": "Personal Glad0s Test - Test Chamber #k needs k copies. Count (hook) = chambers in that region."
+    },
+    {
+      "count": "13",
+      "name": "Old Aperture Key",
+      "category": ["Keys"],
+      "progression": true,
+      "_comment": "Old Aperture Rooms - Test Chamber #k needs k copies. Count (hook) = chambers in that region."
+    },
+    {
+      "count": "13",
+      "name": "Wheatley Maintenance Key",
+      "category": ["Keys"],
+      "progression": true,
+      "_comment": "Wheatley's Chaotic Tests - Test Chamber #k needs k copies. Count (hook) = chambers in that region."
     },
 
     {

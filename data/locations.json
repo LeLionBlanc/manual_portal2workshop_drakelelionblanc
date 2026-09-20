@@ -47,7 +47,7 @@
         "Test Chambers",
         "Enrichment Center"
       ],
-      "requires": "|Chamber Access:1|"
+      "requires": "|Enrichment Center Key:1|"
     },
     {
       "name": "Enrichment Center - Test Chamber #2",
@@ -56,7 +56,7 @@
         "Test Chambers",
         "Enrichment Center"
       ],
-      "requires": "|Chamber Access:2|"
+      "requires": "|Enrichment Center Key:2|"
     },
     {
       "name": "Enrichment Center - Test Chamber #3",
@@ -65,7 +65,7 @@
         "Test Chambers",
         "Enrichment Center"
       ],
-      "requires": "|Chamber Access:3|"
+      "requires": "|Enrichment Center Key:3|"
     },
     {
       "name": "Enrichment Center - Test Chamber #4",
@@ -74,7 +74,7 @@
         "Test Chambers",
         "Enrichment Center"
       ],
-      "requires": "|Chamber Access:4|"
+      "requires": "|Enrichment Center Key:4|"
     },
     {
       "name": "Enrichment Center - Test Chamber #5",
@@ -83,7 +83,7 @@
         "Test Chambers",
         "Enrichment Center"
       ],
-      "requires": "|Chamber Access:5|"
+      "requires": "|Enrichment Center Key:5|"
     },
     {
       "name": "Enrichment Center - Test Chamber #6",
@@ -92,7 +92,7 @@
         "Test Chambers",
         "Enrichment Center"
       ],
-      "requires": "|Chamber Access:6|"
+      "requires": "|Enrichment Center Key:6|"
     },
     {
       "name": "Enrichment Center - Test Chamber #7",
@@ -101,7 +101,7 @@
         "Test Chambers",
         "Enrichment Center"
       ],
-      "requires": "|Chamber Access:7|"
+      "requires": "|Enrichment Center Key:7|"
     },
     {
       "name": "Enrichment Center - Test Chamber #8",
@@ -110,7 +110,7 @@
         "Test Chambers",
         "Enrichment Center"
       ],
-      "requires": "|Chamber Access:8|"
+      "requires": "|Enrichment Center Key:8|"
     },
     {
       "name": "Enrichment Center - Test Chamber #9",
@@ -119,7 +119,7 @@
         "Test Chambers",
         "Enrichment Center"
       ],
-      "requires": "|Chamber Access:9|"
+      "requires": "|Enrichment Center Key:9|"
     },
     {
       "name": "Enrichment Center - Test Chamber #10",
@@ -128,7 +128,7 @@
         "Test Chambers",
         "Enrichment Center"
       ],
-      "requires": "|Chamber Access:10|"
+      "requires": "|Enrichment Center Key:10|"
     },
     {
       "name": "Enrichment Center - Test Chamber #11",
@@ -137,7 +137,7 @@
         "Test Chambers",
         "Enrichment Center"
       ],
-      "requires": "|Chamber Access:11|"
+      "requires": "|Enrichment Center Key:11|"
     },
     {
       "name": "Enrichment Center - Test Chamber #12",
@@ -146,7 +146,7 @@
         "Test Chambers",
         "Enrichment Center"
       ],
-      "requires": "|Chamber Access:12|"
+      "requires": "|Enrichment Center Key:12|"
     },
     {
       "name": "Enrichment Center - Test Chamber #13",
@@ -155,7 +155,7 @@
         "Test Chambers",
         "Enrichment Center"
       ],
-      "requires": "|Chamber Access:13|"
+      "requires": "|Enrichment Center Key:13|"
     },
     {
       "name": "Personal Glad0s Test - Test Chamber #1",
@@ -164,7 +164,7 @@
         "Test Chambers",
         "Personal Glad0s Test"
       ],
-      "requires": "|Chamber Access:1|"
+      "requires": "|Glad0s Testing Key:1|"
     },
     {
       "name": "Personal Glad0s Test - Test Chamber #2",
@@ -173,7 +173,7 @@
         "Test Chambers",
         "Personal Glad0s Test"
       ],
-      "requires": "|Chamber Access:2|"
+      "requires": "|Glad0s Testing Key:2|"
     },
     {
       "name": "Personal Glad0s Test - Test Chamber #3",
@@ -182,7 +182,7 @@
         "Test Chambers",
         "Personal Glad0s Test"
       ],
-      "requires": "|Chamber Access:3|"
+      "requires": "|Glad0s Testing Key:3|"
     },
     {
       "name": "Personal Glad0s Test - Test Chamber #4",
@@ -191,7 +191,7 @@
         "Test Chambers",
         "Personal Glad0s Test"
       ],
-      "requires": "|Chamber Access:4|"
+      "requires": "|Glad0s Testing Key:4|"
     },
     {
       "name": "Personal Glad0s Test - Test Chamber #5",
@@ -200,7 +200,7 @@
         "Test Chambers",
         "Personal Glad0s Test"
       ],
-      "requires": "|Chamber Access:5|"
+      "requires": "|Glad0s Testing Key:5|"
     },
     {
       "name": "Personal Glad0s Test - Test Chamber #6",
@@ -209,7 +209,7 @@
         "Test Chambers",
         "Personal Glad0s Test"
       ],
-      "requires": "|Chamber Access:6|"
+      "requires": "|Glad0s Testing Key:6|"
     },
     {
       "name": "Personal Glad0s Test - Test Chamber #7",
@@ -218,7 +218,7 @@
         "Test Chambers",
         "Personal Glad0s Test"
       ],
-      "requires": "|Chamber Access:7|"
+      "requires": "|Glad0s Testing Key:7|"
     },
     {
       "name": "Personal Glad0s Test - Test Chamber #8",
@@ -227,7 +227,7 @@
         "Test Chambers",
         "Personal Glad0s Test"
       ],
-      "requires": "|Chamber Access:8|"
+      "requires": "|Glad0s Testing Key:8|"
     },
     {
       "name": "Personal Glad0s Test - Test Chamber #9",
@@ -236,7 +236,7 @@
         "Test Chambers",
         "Personal Glad0s Test"
       ],
-      "requires": "|Chamber Access:9|"
+      "requires": "|Glad0s Testing Key:9|"
     },
     {
       "name": "Personal Glad0s Test - Test Chamber #10",
@@ -245,7 +245,7 @@
         "Test Chambers",
         "Personal Glad0s Test"
       ],
-      "requires": "|Chamber Access:10|"
+      "requires": "|Glad0s Testing Key:10|"
     },
     {
       "name": "Personal Glad0s Test - Test Chamber #11",
@@ -254,7 +254,7 @@
         "Test Chambers",
         "Personal Glad0s Test"
       ],
-      "requires": "|Chamber Access:11|"
+      "requires": "|Glad0s Testing Key:11|"
     },
     {
       "name": "Personal Glad0s Test - Test Chamber #12",
@@ -263,7 +263,7 @@
         "Test Chambers",
         "Personal Glad0s Test"
       ],
-      "requires": "|Chamber Access:12|"
+      "requires": "|Glad0s Testing Key:12|"
     },
     {
       "name": "Personal Glad0s Test - Test Chamber #13",
@@ -272,7 +272,7 @@
         "Test Chambers",
         "Personal Glad0s Test"
       ],
-      "requires": "|Chamber Access:13|"
+      "requires": "|Glad0s Testing Key:13|"
     },
     {
       "name": "Old Aperture Rooms - Test Chamber #1",
@@ -281,7 +281,7 @@
         "Test Chambers",
         "Old Aperture Rooms"
       ],
-      "requires": "|Chamber Access:1|"
+      "requires": "|Old Aperture Key:1|"
     },
     {
       "name": "Old Aperture Rooms - Test Chamber #2",
@@ -290,7 +290,7 @@
         "Test Chambers",
         "Old Aperture Rooms"
       ],
-      "requires": "|Chamber Access:2|"
+      "requires": "|Old Aperture Key:2|"
     },
     {
       "name": "Old Aperture Rooms - Test Chamber #3",
@@ -299,7 +299,7 @@
         "Test Chambers",
         "Old Aperture Rooms"
       ],
-      "requires": "|Chamber Access:3|"
+      "requires": "|Old Aperture Key:3|"
     },
     {
       "name": "Old Aperture Rooms - Test Chamber #4",
@@ -308,7 +308,7 @@
         "Test Chambers",
         "Old Aperture Rooms"
       ],
-      "requires": "|Chamber Access:4|"
+      "requires": "|Old Aperture Key:4|"
     },
     {
       "name": "Old Aperture Rooms - Test Chamber #5",
@@ -317,7 +317,7 @@
         "Test Chambers",
         "Old Aperture Rooms"
       ],
-      "requires": "|Chamber Access:5|"
+      "requires": "|Old Aperture Key:5|"
     },
     {
       "name": "Old Aperture Rooms - Test Chamber #6",
@@ -326,7 +326,7 @@
         "Test Chambers",
         "Old Aperture Rooms"
       ],
-      "requires": "|Chamber Access:6|"
+      "requires": "|Old Aperture Key:6|"
     },
     {
       "name": "Old Aperture Rooms - Test Chamber #7",
@@ -335,7 +335,7 @@
         "Test Chambers",
         "Old Aperture Rooms"
       ],
-      "requires": "|Chamber Access:7|"
+      "requires": "|Old Aperture Key:7|"
     },
     {
       "name": "Old Aperture Rooms - Test Chamber #8",
@@ -344,7 +344,7 @@
         "Test Chambers",
         "Old Aperture Rooms"
       ],
-      "requires": "|Chamber Access:8|"
+      "requires": "|Old Aperture Key:8|"
     },
     {
       "name": "Old Aperture Rooms - Test Chamber #9",
@@ -353,7 +353,7 @@
         "Test Chambers",
         "Old Aperture Rooms"
       ],
-      "requires": "|Chamber Access:9|"
+      "requires": "|Old Aperture Key:9|"
     },
     {
       "name": "Old Aperture Rooms - Test Chamber #10",
@@ -362,7 +362,7 @@
         "Test Chambers",
         "Old Aperture Rooms"
       ],
-      "requires": "|Chamber Access:10|"
+      "requires": "|Old Aperture Key:10|"
     },
     {
       "name": "Old Aperture Rooms - Test Chamber #11",
@@ -371,7 +371,7 @@
         "Test Chambers",
         "Old Aperture Rooms"
       ],
-      "requires": "|Chamber Access:11|"
+      "requires": "|Old Aperture Key:11|"
     },
     {
       "name": "Old Aperture Rooms - Test Chamber #12",
@@ -380,7 +380,7 @@
         "Test Chambers",
         "Old Aperture Rooms"
       ],
-      "requires": "|Chamber Access:12|"
+      "requires": "|Old Aperture Key:12|"
     },
     {
       "name": "Old Aperture Rooms - Test Chamber #13",
@@ -389,7 +389,7 @@
         "Test Chambers",
         "Old Aperture Rooms"
       ],
-      "requires": "|Chamber Access:13|"
+      "requires": "|Old Aperture Key:13|"
     },
     {
       "name": "Wheatley's Chaotic Tests - Test Chamber #1",
@@ -398,7 +398,7 @@
         "Test Chambers",
         "Wheatley's Chaotic Tests"
       ],
-      "requires": "|Chamber Access:1|"
+      "requires": "|Wheatley Maintenance Key:1|"
     },
     {
       "name": "Wheatley's Chaotic Tests - Test Chamber #2",
@@ -407,7 +407,7 @@
         "Test Chambers",
         "Wheatley's Chaotic Tests"
       ],
-      "requires": "|Chamber Access:2|"
+      "requires": "|Wheatley Maintenance Key:2|"
     },
     {
       "name": "Wheatley's Chaotic Tests - Test Chamber #3",
@@ -416,7 +416,7 @@
         "Test Chambers",
         "Wheatley's Chaotic Tests"
       ],
-      "requires": "|Chamber Access:3|"
+      "requires": "|Wheatley Maintenance Key:3|"
     },
     {
       "name": "Wheatley's Chaotic Tests - Test Chamber #4",
@@ -425,7 +425,7 @@
         "Test Chambers",
         "Wheatley's Chaotic Tests"
       ],
-      "requires": "|Chamber Access:4|"
+      "requires": "|Wheatley Maintenance Key:4|"
     },
     {
       "name": "Wheatley's Chaotic Tests - Test Chamber #5",
@@ -434,7 +434,7 @@
         "Test Chambers",
         "Wheatley's Chaotic Tests"
       ],
-      "requires": "|Chamber Access:5|"
+      "requires": "|Wheatley Maintenance Key:5|"
     },
     {
       "name": "Wheatley's Chaotic Tests - Test Chamber #6",
@@ -443,7 +443,7 @@
         "Test Chambers",
         "Wheatley's Chaotic Tests"
       ],
-      "requires": "|Chamber Access:6|"
+      "requires": "|Wheatley Maintenance Key:6|"
     },
     {
       "name": "Wheatley's Chaotic Tests - Test Chamber #7",
@@ -452,7 +452,7 @@
         "Test Chambers",
         "Wheatley's Chaotic Tests"
       ],
-      "requires": "|Chamber Access:7|"
+      "requires": "|Wheatley Maintenance Key:7|"
     },
     {
       "name": "Wheatley's Chaotic Tests - Test Chamber #8",
@@ -461,7 +461,7 @@
         "Test Chambers",
         "Wheatley's Chaotic Tests"
       ],
-      "requires": "|Chamber Access:8|"
+      "requires": "|Wheatley Maintenance Key:8|"
     },
     {
       "name": "Wheatley's Chaotic Tests - Test Chamber #9",
@@ -470,7 +470,7 @@
         "Test Chambers",
         "Wheatley's Chaotic Tests"
       ],
-      "requires": "|Chamber Access:9|"
+      "requires": "|Wheatley Maintenance Key:9|"
     },
     {
       "name": "Wheatley's Chaotic Tests - Test Chamber #10",
@@ -479,7 +479,7 @@
         "Test Chambers",
         "Wheatley's Chaotic Tests"
       ],
-      "requires": "|Chamber Access:10|"
+      "requires": "|Wheatley Maintenance Key:10|"
     },
     {
       "name": "Wheatley's Chaotic Tests - Test Chamber #11",
@@ -488,7 +488,7 @@
         "Test Chambers",
         "Wheatley's Chaotic Tests"
       ],
-      "requires": "|Chamber Access:11|"
+      "requires": "|Wheatley Maintenance Key:11|"
     },
     {
       "name": "Wheatley's Chaotic Tests - Test Chamber #12",
@@ -497,7 +497,7 @@
         "Test Chambers",
         "Wheatley's Chaotic Tests"
       ],
-      "requires": "|Chamber Access:12|"
+      "requires": "|Wheatley Maintenance Key:12|"
     },
     {
       "name": "Wheatley's Chaotic Tests - Test Chamber #13",
@@ -506,7 +506,7 @@
         "Test Chambers",
         "Wheatley's Chaotic Tests"
       ],
-      "requires": "|Chamber Access:13|"
+      "requires": "|Wheatley Maintenance Key:13|"
     },
     {
       "name": "First Contact : Cube on a Button",
@@ -680,18 +680,6 @@
       "requires": ""
     },
     {
-      "name": "First Contact : Cleansing Gel",
-      "region": "Old Aperture Rooms",
-      "category": [
-        "First Contact",
-        "Old Aperture Rooms"
-      ],
-      "requires": "",
-      "place_item_category": [
-        "Filler"
-      ]
-    },
-    {
       "name": "Mastery : Gels",
       "region": "Old Aperture Rooms",
       "category": [
@@ -755,18 +743,6 @@
       "requires": ""
     },
     {
-      "name": "First Contact : Rocket Turret",
-      "region": "Wheatley's Chaotic Tests",
-      "category": [
-        "First Contact",
-        "Wheatley's Chaotic Tests"
-      ],
-      "requires": "",
-      "place_item_category": [
-        "Filler"
-      ]
-    },
-    {
       "name": "Mastery : Triple Threat",
       "region": "Wheatley's Chaotic Tests",
       "category": [
@@ -803,12 +779,57 @@
       "requires": ""
     },
     {
+      "name": "Final Exam - Test Chamber #1",
+      "region": "Final Exam",
+      "category": [
+        "Test Chambers",
+        "Final Exam"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Final Exam - Test Chamber #2",
+      "region": "Final Exam",
+      "category": [
+        "Test Chambers",
+        "Final Exam"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Final Exam - Test Chamber #3",
+      "region": "Final Exam",
+      "category": [
+        "Test Chambers",
+        "Final Exam"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Final Exam - Test Chamber #4",
+      "region": "Final Exam",
+      "category": [
+        "Test Chambers",
+        "Final Exam"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Final Exam - Test Chamber #5",
+      "region": "Final Exam",
+      "category": [
+        "Test Chambers",
+        "Final Exam"
+      ],
+      "requires": ""
+    },
+    {
       "name": "Graduation Ceremony",
       "region": "Final Exam",
       "category": [
         "Graduation"
       ],
-      "requires": "",
+      "requires": "{CanReachLocation(Final Exam - Test Chamber #1)}",
       "victory": true
     }
   ]

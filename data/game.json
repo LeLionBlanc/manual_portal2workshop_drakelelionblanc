@@ -5,8 +5,20 @@
   "filler_item_name": "Lemons",
   "starting_items": [
     {
-      "_comment": "Opens Test Chamber #1 and #2 in every region.",
-      "items": ["Chamber Access"],
+      "_comment": "Two keys per region: Test Chamber #1 and #2 open as soon as that region's Clearance lands.",
+      "items": ["Enrichment Center Key"],
+      "random": 2
+    },
+    {
+      "items": ["Glad0s Testing Key"],
+      "random": 2
+    },
+    {
+      "items": ["Old Aperture Key"],
+      "random": 2
+    },
+    {
+      "items": ["Wheatley Maintenance Key"],
       "random": 2
     }
   ]

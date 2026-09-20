@@ -10,7 +10,7 @@ A Manual game is a custom game that you've set an item list and location list fo
 ## What does randomization do to this game?
 You randomize access to fictional locations represented by the ability to launch a random worshop test chambers
 ## What is the goal of a Manual game when randomized?
-You need to find 5 Mac Guffin represented by 5 Diploma witch allows you to access to the Final Exam and goal the game.
+You need to find 5 Mac Guffin represented by 5 Diploma witch allows you to access to the Final Exam, clear its chambers and goal the game.
 
 
 
@@ -23,9 +23,9 @@ You don't. There is no mod. The tasks of marking locations as checked and limiti
 
 | Item | What it does |
 | --- | --- |
-| `Chamber Access` | `Test Chamber #k` needs `k` copies, the same in every region. |
+| The four Keys | One key per testing region. `<Region> - Test Chamber #k` needs `k` copies of **that region's** key. |
 | The four Clearances | One item each, one region each. `Enrichment Center`, `Glad0s Testing`, `Old Aperture`, `Wheatley Maintenance`. |
-| The five Diplomas | Together they open `Final Exam`, whose single check is the goal. |
+| The five Diplomas | Together they open `Final Exam` and its chambers. Clear them, then take the goal. |
 
 ## Map
 
@@ -46,37 +46,48 @@ Center Clearance   Clearance          Clearance          Clearance         |@Dip
 ┌────────────┐ ┌──────────────┐  ┌──────────────┐  ┌──────────────────┐  ┌────────────┐
 │ ENRICHMENT │ │ PERSONAL     │  │ OLD APERTURE │  │ WHEATLEY'S       │  │ FINAL EXAM │
 │ CENTER     │ │ GLAD0S TEST  │  │ ROOMS        │  │ CHAOTIC TESTS    │  │            │
-│            │ │              │  │              │  │                  │  │            │
-│ n chambers │ │ n chambers   │  │ n chambers   │  │ n chambers       │  │ the goal   │
-│ 4 FC 2M 2m │ │ 4 FC 2M 2m   │  │ 4 FC 2M 2m   │  │ 4 FC 2M 2m       │  │            │
+│            │ │              │  │              │  │                  │  │ f chambers │
+│ n chambers │ │ n chambers   │  │ n chambers   │  │ n chambers       │  │     then   │
+│ 4 FC 2M 2m │ │ 4 FC 2M 2m   │  │ 4 FC 2M 2m   │  │ 4 FC 2M 2m       │  │  the goal  │
 └────────────┘ └──────────────┘  └──────────────┘  └──────────────────┘  └────────────┘
+  Enrichment      Glad0s          Old Aperture       Wheatley Maint.
+  Center Key      Testing Key     Key                Key
+  n copies        n copies        n copies           n copies
 
   FC = First Contact   M = Mastery   m = Milestone
   n  = chamber_count / 4, so 10 each by default, 13 at the maximum, 3 at the minimum
+  f  = final_exam_count, 1 by default, 5 at the maximum
 ```
 
 `Relaxation Vault` represent the tutorial level. It holds exactly one map, `Test Chamber #0`
 
 Completing `Test Chamber #0` is what gets you out. That location is forced to hold a **random Clearance**
 
-## Regions
+## Regions & Locations
+
+
 
 | Region | Theme | Opened by | Chambers | First Contact | Mastery | Milestone |
 | --- | --- | --- | --- | --- | --- | --- |
 | **Enrichment Center** | Portal 1 mechanics | `Enrichment Center Clearance` | `#1 .. #13` | Cube on a Button, Emancipation Grid, Cube Dispenser, Timed Button | Purist, Use Gravity | Name Your Cube, Chamber Sign Read |
 | **Personal Glad0s Test** | Portal 2 early game mechanics | `Glad0s Testing Clearance` | `#1 .. #13` | Thermal Discouragement Beam, Aerial Faith Plate, Hard Light Bridge, Excursion Funnel | No Floor, Laser Yourself | Overgrown Chamber Cleared, GLaDOS Heard |
-| **Old Aperture Rooms** | Mechanics found after falling in abandonned aperture | `Old Aperture Clearance` | `#1 .. #13` | Repulsion Gel, Propulsion Gel, Conversion Gel, Cleansing Gel | Gels, Overpaint | Cave Johnson Heard, Pellet to the Face |
-| **Wheatley's Chaotic Tests** | Dangerous stuffs | `Wheatley Maintenance Clearance` | `#1 .. #13` | Crushers, Toxic Goo, Turret, Rocket Turret | Triple Threat, Creative Death | Jury-Rigged Chamber Cleared, Out of Bounds |
-| **Final Exam** | Graduation | all 5 Diplomas | none | `Graduation Ceremony`, the goal | | |
+| **Old Aperture Rooms** | Mechanics found after falling in abandonned aperture | `Old Aperture Clearance` | `#1 .. #13` | Repulsion Gel, Propulsion Gel, Conversion Gel | Gels, Overpaint | Cave Johnson Heard, Pellet to the Face |
+| **Wheatley's Chaotic Tests** | Dangerous stuffs | `Wheatley Maintenance Clearance` | `#1 .. #13` | Crushers, Toxic Goo, Turret | Triple Threat, Creative Death | Jury-Rigged Chamber Cleared, Out of Bounds |
+| **Final Exam** | Graduation | all 5 Diplomas | `#1 .. #5` | `Graduation Ceremony`, the goal | | |
 
 At full size that is 52 chambers plus the tutorial map, 3 Tutorial, 16 First Contact, 8 Mastery,
-8 Milestone and the goal: **89 locations**.
+8 Milestone, the Final Exam chambers and the goal: **89 + `final_exam_count` locations**.
+
+See heck References for detail on challenges.
 
 ## Items
 
 | Item | Copies | Effect |
 | --- | --- | --- |
-| `Chamber Access` | `chamber_count / 4` rounded up | `Test Chamber #k` needs `k` of them, in the four testing regions. `#0` is free. Two are in your starting inventory. |
+| `Enrichment Center Key` | chambers in that region | `Enrichment Center - Test Chamber #k` needs `k` of them. Two are in your starting inventory. |
+| `Glad0s Testing Key` | chambers in that region | `Personal Glad0s Test - Test Chamber #k` needs `k` of them. Two are in your starting inventory. |
+| `Old Aperture Key` | chambers in that region | `Old Aperture Rooms - Test Chamber #k` needs `k` of them. Two are in your starting inventory. |
+| `Wheatley Maintenance Key` | chambers in that region | `Wheatley's Chaotic Tests - Test Chamber #k` needs `k` of them. Two are in your starting inventory. |
 | Clearances | 5 | Opens one region outright. |
 | Diplomas | 5 | Together they open `Final Exam`. |
 | `Auto-Win Chamber` | scales | Tick one `Test Chamber` without playing a map. Bail out of a roll you hate. |
@@ -92,7 +103,11 @@ you need to configure and export a config file.
 
 | Option | Range | Default | Effect |
 | --- | --- | --- | --- |
-| `chamber_count` | 12 - 52 | 40 | How many `Test Chamber` checks the four testing regions hold, spread evenly with a floor of 3 each. The tutorial map `#0` is on top, so a run is `chamber_count + 1` maps. `Chamber Access` copies = `chamber_count / 4` rounded up. |
+| `chamber_count` | 12 - 52 | 40 | How many `Test Chamber` checks the four testing regions hold, spread evenly with a floor of 3 each. Each region's Key gets one copy per chamber that region holds. |
+| `final_exam_count` | 1 - 5 | 1 | How many maps you clear inside the `Final Exam` before the `Graduation Ceremony`. On top of `chamber_count`. |
+
+The tutorial map `#0` and the Final Exam chambers are both on top of `chamber_count`, so a run is
+`chamber_count + 1 + final_exam_count` maps.
 
 ## Check reference
 
@@ -112,11 +127,11 @@ Three kinds, and the difference matters when you are judging a borderline case:
 
 ### Relaxation Vault
 
-*Portal 1's opening, before the gun.* Your starting region, always open.
+Your starting region, always open.
 
 `Relaxation Vault - Test Chamber #0` is the tutorial map, and completing it is what gets you out of here - it
-**always holds a Clearance**, any of the four. It costs no `Chamber Access` and it is not part
-of `chamber_count`, so a run is always `chamber_count + 1` maps.
+**always holds a Clearance**, any of the four. It costs no Key and it is not part
+of `chamber_count`.
 
 | Challenge | How to tick it |
 | --- | --- |
@@ -127,7 +142,7 @@ of `chamber_count`, so a run is always `chamber_count + 1` maps.
 
 ### Enrichment Center
 
-*Clean modern Aperture: cubes, buttons, grids.* Opens with `Enrichment Center Clearance`.
+*Clean modern Aperture: cubes, buttons, grids.* 
 
 | Challenge | How to tick it |
 | --- | --- |
@@ -142,7 +157,7 @@ of `chamber_count`, so a run is always `chamber_count + 1` maps.
 
 ### Personal Glad0s Test
 
-*Light and energy: lasers, bridges, funnels.* Opens with `Glad0s Testing Clearance`.
+*Light and energy: lasers, bridges, funnels.*
 
 | Challenge | How to tick it |
 | --- | --- |
@@ -157,14 +172,13 @@ of `chamber_count`, so a run is always `chamber_count + 1` maps.
 
 ### Old Aperture Rooms
 
-*The gels, and Cave Johnson's era.* Opens with `Old Aperture Clearance`.
+*The gels, and Cave Johnson's era.*
 
 | Challenge | How to tick it |
 | --- | --- |
 | `First Contact : Repulsion Gel` | Finish a map that uses blue gel. |
 | `First Contact : Propulsion Gel` | Finish a map that uses orange gel. |
 | `First Contact : Conversion Gel` | Finish a map that uses white gel. |
-| `First Contact : Cleansing Gel` *(rare)* | Finish a map where cleansing gel is a puzzle tool, not scenery. |
 | `Mastery : Gels` | Finish a map that uses two different gels. Cleansing gel does not count as one of the two. |
 | `Mastery : Overpaint` | Paint far more surface than the puzzle asks for, well past what you need, then finish the map anyway. |
 | `Milestone : Cave Johnson Heard` | Listen to a Cave Johnson recording, original or written by the mapper. |
@@ -172,25 +186,26 @@ of `chamber_count`, so a run is always `chamber_count + 1` maps.
 
 ### Wheatley's Chaotic Tests
 
-*Hazards and broken geometry.* Opens with `Wheatley Maintenance Clearance`.
-
+*Hazards and dangerous stuffs* 
 | Challenge | How to tick it |
 | --- | --- |
 | `First Contact : Crushers` | Finish a map that uses crushers or lethal pistons. |
 | `First Contact : Toxic Goo` | Finish a map where the goo is a real hazard, not scenery under a walkway. |
 | `First Contact : Turret` | Take out an active turret, or escape it and finish the map. |
-| `First Contact : Rocket Turret` *(rare)* | Finish a map containing a rocket turret. |
 | `Mastery : Triple Threat` | Finish a map that uses three distinct advanced mechanics. |
 | `Mastery : Creative Death` | Die by combining two mechanics. The only check in the run where dying pays. |
 | `Milestone : Jury-Rigged Chamber Cleared` | Finish a map cobbled together Wheatley-style: crooked geometry, mismatched parts, an improvised chamber. |
 | `Milestone : Out of Bounds` | Get outside the map's boundaries. Go where the mapper did not expect you, and come back. |
 
-Two challenges are marked *(rare)*: `Cleansing Gel` and `Rocket Turret` show up in maybe one
-roll in a hundred. They are still normal checks you can hunt, but their locations are locked to
-filler items, so never finding one cannot block your seed or anyone else's.
-
 ### Final Exam
+
+*Graduation.* Opens with all five Diplomas: `Aperture Gel Mastery`, `Portal Gun Expert`,
+`Laser Redirection Master`, `Turret Evasion Diploma`, `Trivia Cube Champion`.
+
+The exam chambers need no Key - the Diplomas are the whole gate. They are ordinary rolled maps,
+`final_exam_count` of them, and you play them before you graduate.
 
 | Challenge | Requirement |
 | --- | --- |
-| `Graduation Ceremony` | All five Diplomas: `Aperture Gel Mastery`, `Portal Gun Expert`, `Laser Redirection Master`, `Turret Evasion Diploma`, `Trivia Cube Champion`. This is the goal. |
+| `Final Exam - Test Chamber #1 .. #f` | Roll and finish a map, once per exam chamber. `f` is `final_exam_count`. |
+| `Graduation Ceremony` | Clear every Final Exam chamber. This is the goal. |
