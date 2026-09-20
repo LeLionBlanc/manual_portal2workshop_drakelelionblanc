@@ -1,77 +1,98 @@
 {
   "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.items.schema.json",
+  "_comment": "Counts marked (hook) are overridden per player in hooks/World.py:before_create_items_all, because they scale with the chamber_count option.",
   "data": [
     {
-      "count": "50",
+      "count": "13",
       "name": "Chamber Access",
-      "category": [
-        "Access"
-      ],
+      "category": ["Access"],
+      "progression": true,
+      "_comment": "Test Chamber #k needs k copies, in every region. Count (hook) = ceil(chamber_count / 4)."
+    },
+
+    {
+      "count": "1",
+      "name": "Enrichment Center Clearance",
+      "category": ["Clearance"],
       "progression": true
     },
     {
       "count": "1",
+      "name": "Glad0s Testing Clearance",
+      "category": ["Clearance"],
+      "progression": true
+    },
+    {
+      "count": "1",
+      "name": "Old Aperture Clearance",
+      "category": ["Clearance"],
+      "progression": true
+    },
+    {
+      "count": "1",
+      "name": "Wheatley Maintenance Clearance",
+      "category": ["Clearance"],
+      "progression": true
+    },
+
+    {
+      "count": "1",
       "name": "Aperture Gel Mastery",
-      "category": [
-        "Graduation"
-      ],
+      "category": ["Diplomas"],
       "progression": true
     },
     {
       "count": "1",
       "name": "Portal Gun Expert",
-      "category": [
-        "Graduation"
-      ],
+      "category": ["Diplomas"],
       "progression": true
     },
     {
       "count": "1",
       "name": "Laser Redirection Master",
-      "category": [
-        "Graduation"
-      ],
+      "category": ["Diplomas"],
       "progression": true
     },
     {
       "count": "1",
       "name": "Turret Evasion Diploma",
-      "category": [
-        "Graduation"
-      ],
+      "category": ["Diplomas"],
       "progression": true
     },
     {
       "count": "1",
       "name": "Trivia Cube Champion",
-      "category": [
-        "Graduation"
-      ],
+      "category": ["Diplomas"],
       "progression": true
     },
+
     {
-      "count": "3",
-      "name": "Advanced Testing Clearance",
-      "category": [
-        "Clearance"
-      ],
-      "progression": true
-    },
-    {
-      "count": "4",
+      "count": "10",
       "name": "Auto-Win Chamber",
-      "category": [
-        "Consumables"
-      ],
-      "useful": true
+      "category": ["Consumables"],
+      "useful": true,
+      "_comment": "Scales with the number of fillable locations (ceil(chamber_count / 4))."
     },
     {
-      "count": "2",
+      "count": "10",
+      "name": "Second Chance",
+      "category": ["Consumables"],
+      "useful": true,
+      "_comment": "Re-roll the current map without counting it as a completion. Scales with the number of fillable locations (ceil(chamber_count / 4))."
+    },
+    {
+      "count": "16",
+      "name": "Cave Johnson Pep Talk",
+      "category": ["Filler"],
+      "filler": true,
+      "_comment": "Count (hook)."
+    },
+    {
+      "count": "6",
       "name": "Force Reset",
-      "category": [
-        "Trap"
-      ],
-      "trap": true
+      "category": ["Trap"],
+      "trap": true,
+      "_comment": "Count (hook)."
     }
   ]
 }

@@ -17,6 +17,7 @@ from ..Helpers import is_option_enabled, get_option_value, format_state_prog_ite
 
 # calling logging.info("message") anywhere below in this file will output the message to both console and log file
 import logging
+import re
 
 ########################################################################################
 ## Order of method calls when the world generates:
@@ -31,24 +32,35 @@ import logging
 ########################################################################################
 
 
+MAX_PER_REGION = 13
+MIN_PER_REGION = 3
+
 CHAMBER_REGIONS = [
-    ("Aperture Science Test Rooms", 1, 12),
-    ("Personal Glad0s Test", 13, 26),
-    ("Old Aperture Rooms", 27, 38),
-    ("Wheatley's Chaotic Tests", 39, 50),
+    "Enrichment Center",
+    "Personal Glad0s Test",
+    "Old Aperture Rooms",
+    "Wheatley's Chaotic Tests",
 ]
-MAX_CHAMBER_TOTAL = 50
+
+CHAMBER_NAME_RE = re.compile(r"^(?P<region>.+) - Test Chamber #(?P<number>\d+)$")
+
+TUTORIAL_REGION = "Relaxation Vault"
 
 
-def chamber_location_name(number: int) -> str:
-    for region, start, end in CHAMBER_REGIONS:
-        if start <= number <= end:
-            return f"{region} - Chamber {number:02d}"
-    raise ValueError(f"No region holds chamber {number}")
+def chamber_total(multiworld: MultiWorld, player: int) -> int:
+    requested = get_option_value(multiworld, player, "chamber_count")
+    region_count = len(CHAMBER_REGIONS)
+    return max(MIN_PER_REGION * region_count, min(MAX_PER_REGION * region_count, requested))
 
 
-def chambers_kept(world: World, multiworld: MultiWorld, player: int) -> int:
-    return max(1, min(MAX_CHAMBER_TOTAL, get_option_value(multiworld, player, "chamber_count")))
+def chambers_per_region(multiworld: MultiWorld, player: int) -> dict[str, int]:
+    regions = CHAMBER_REGIONS
+    base, remainder = divmod(chamber_total(multiworld, player), len(regions))
+    return {region: base + (1 if index < remainder else 0) for index, region in enumerate(regions)}
+
+
+def compute_access_copies(multiworld: MultiWorld, player: int) -> int:
+    return max(chambers_per_region(multiworld, player).values())
 
 
 # Use this function to change the valid filler items to be created to replace item links or starting items.
@@ -69,19 +81,33 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
-    # Use this hook to remove locations from the world
-    locationNamesToRemove: list[str] = [] # List of location names
 
-    # Trim the chamber ladder down to the player's chamber_count. Chambers are dropped from the
-    # top, so the remaining ones keep a contiguous Chamber Access cost of 1..chamber_count.
-    for number in range(chambers_kept(world, multiworld, player) + 1, MAX_CHAMBER_TOTAL + 1):
-        locationNamesToRemove.append(chamber_location_name(number))
+    ## Chamber allocation 
+    allocation = chambers_per_region(multiworld, player)
 
     for region in multiworld.regions:
-        if region.player == player:
-            for location in list(region.locations):
-                if location.name in locationNamesToRemove:
-                    region.locations.remove(location)
+        if region.player != player:
+            continue
+
+        for location in list(region.locations):
+            match = CHAMBER_NAME_RE.match(location.name)
+            if match is None:
+                continue
+
+            if match.group("region") == TUTORIAL_REGION:
+                continue
+
+            kept = allocation.get(match.group("region"))
+            if kept is None:
+                logging.warning(
+                    "Portal2Workshop: chamber location %r is not in a known chamber region, leaving it in place.",
+                    location.name,
+                )
+                continue
+
+            if int(match.group("number")) > kept:
+                region.locations.remove(location)
+
 
 # This hook allows you to access the item names & counts before the items are created. Use this to increase/decrease the amount of a specific item in the pool
 # Valid item_config key/values:
@@ -92,7 +118,24 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 #       will create 5 items that are the "useful trap" class
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
-    item_config["Chamber Access"] = chambers_kept(world, multiworld, player)
+    item_config["Chamber Access"] = compute_access_copies(multiworld, player)
+
+    fillable = len([loc for loc in multiworld.get_locations(player) if loc.address is not None])
+
+    fixed_progression = sum(
+        int(item.get("count", 1))
+        for item in world.item_name_to_item.values()
+        if item.get("progression") and item["name"] != "Chamber Access"
+    )
+    budget = max(0, fillable - item_config["Chamber Access"] - fixed_progression)
+    # Items
+    item_config["Auto-Win Chamber"] = max(1, round(budget * 0.20))
+    item_config["Second Chance"] = max(1, round(budget * 0.20))
+    # Traps
+    item_config["Force Reset"] = max(1, round(budget * 0.10))
+    # Fillers
+    item_config["Cave Johnson Pep Talk"] = max(6, round(budget * 0.28))
+
     return item_config
 
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage

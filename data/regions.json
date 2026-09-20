@@ -1,32 +1,41 @@
 {
   "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.regions.schema.json",
-  "Aperture Science Test Rooms": {
+
+  "Relaxation Vault": {
+    "_comment": "One test chamber with simple Tutorial Checks, Relaxation Vault check is forced to hold a Clearance, so the first region always opens from the first minute of play.",
     "starting": true,
     "requires": "",
     "connects_to": [
-      "Personal Glad0s Test"
-    ]
-  },
-  "Personal Glad0s Test": {
-    "requires": "|Advanced Testing Clearance:1|",
-    "connects_to": [
-      "Old Aperture Rooms"
-    ]
-  },
-  "Old Aperture Rooms": {
-    "requires": "|Advanced Testing Clearance:2|",
-    "connects_to": [
-      "Wheatley's Chaotic Tests"
-    ]
-  },
-  "Wheatley's Chaotic Tests": {
-    "requires": "|Advanced Testing Clearance:3|",
-    "connects_to": [
+      "Enrichment Center",
+      "Personal Glad0s Test",
+      "Old Aperture Rooms",
+      "Wheatley's Chaotic Tests",
       "Final Exam"
     ]
   },
+
+  "Enrichment Center": {
+    "requires": "|Enrichment Center Clearance:1|",
+    "connects_to": []
+  },
+
+  "Personal Glad0s Test": {
+    "requires": "|Glad0s Testing Clearance:1|",
+    "connects_to": []
+  },
+
+  "Old Aperture Rooms": {
+    "requires": "|Old Aperture Clearance:1|",
+    "connects_to": []
+  },
+
+  "Wheatley's Chaotic Tests": {
+    "requires": "|Wheatley Maintenance Clearance:1|",
+    "connects_to": []
+  },
+
   "Final Exam": {
-    "requires": "|@Graduation:5|",
+    "requires": "|@Diplomas:5|",
     "connects_to": []
   }
 }

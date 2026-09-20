@@ -6,18 +6,16 @@
         "chamber_count": {
             "display_name": "Test Chambers",
             "description": [
-                "How many test chambers are shuffled into the pool.",
-                "Chambers are removed from the end: 50 keeps all four regions, 12 keeps only Aperture Science Test Rooms.",
-                "The Chamber Access item count scales with this value."
+                "How many test chambers checks there are in the rando. Min :12 Max: 52. Those test chambers will be divided in 4 regions, you have access to only one region at the beggining"
             ],
             "type": "Range",
             "range_start": 12,
-            "range_end": 50,
-            "default": 50,
+            "range_end": 52,
+            "default": 40,
             "values": {
                 "short": 20,
-                "standard": 35,
-                "full": 50
+                "standard": 36,
+                "full": 52
             },
             "group": "Portal 2 Workshop"
         }

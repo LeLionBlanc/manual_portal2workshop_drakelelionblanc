@@ -4,6 +4,10 @@
   "creator": "DrakeLeLionBlanc",
   "filler_item_name": "Lemons",
   "starting_items": [
-  { "items": ["Chamber Access"], "random": 0, "count": 4 }
-]
+    {
+      "_comment": "Opens Test Chamber #1 and #2 in every region.",
+      "items": ["Chamber Access"],
+      "random": 2
+    }
+  ]
 }

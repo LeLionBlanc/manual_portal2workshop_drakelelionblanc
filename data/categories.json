@@ -1,1 +1,23 @@
-{}
+{
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.categories.schema.json",
+
+  "Tutorial": {},
+  "First Contact": {},
+  "Mastery": {},
+  "Test Chambers": {},
+  "Milestones": {},
+  "Graduation": {},
+
+  "Access": {},
+  "Clearance": {},
+  "Diplomas": {},
+  "Consumables": {},
+  "Filler": {},
+  "Trap": {},
+
+  "Relaxation Vault": {},
+  "Enrichment Center": {},
+  "Personal Glad0s Test": {},
+  "Old Aperture Rooms": {},
+  "Wheatley's Chaotic Tests": {}
+}
