@@ -527,7 +527,7 @@
       "requires": ""
     },
     {
-      "name": "First Contact : Cube Dispenser",
+      "name": "First Contact : Long Fall Boots",
       "region": "Enrichment Center",
       "category": [
         "First Contact",
@@ -536,7 +536,7 @@
       "requires": ""
     },
     {
-      "name": "First Contact : Timed Button",
+      "name": "First Contact : 3 Buttons",
       "region": "Enrichment Center",
       "category": [
         "First Contact",
@@ -563,7 +563,7 @@
       "requires": ""
     },
     {
-      "name": "Milestone : Name Your Cube",
+      "name": "Milestone : Companion Cube",
       "region": "Enrichment Center",
       "category": [
         "Milestones",
@@ -581,7 +581,7 @@
       "requires": ""
     },
     {
-      "name": "First Contact : Thermal Discouragement Beam",
+      "name": "First Contact : Reflect Cube",
       "region": "Personal Glad0s Test",
       "category": [
         "First Contact",
@@ -608,7 +608,7 @@
       "requires": ""
     },
     {
-      "name": "First Contact : Excursion Funnel",
+      "name": "First Contact : Tractor Beem",
       "region": "Personal Glad0s Test",
       "category": [
         "First Contact",
@@ -617,7 +617,7 @@
       "requires": ""
     },
     {
-      "name": "Mastery : No Floor",
+      "name": "Mastery : Bridge Execution",
       "region": "Personal Glad0s Test",
       "category": [
         "Mastery",
@@ -752,7 +752,7 @@
       "requires": ""
     },
     {
-      "name": "Mastery : Creative Death",
+      "name": "Mastery : Deathsanity",
       "region": "Wheatley's Chaotic Tests",
       "category": [
         "Mastery",
@@ -761,7 +761,7 @@
       "requires": ""
     },
     {
-      "name": "Milestone : Jury-Rigged Chamber Cleared",
+      "name": "Milestone : Weathley Design",
       "region": "Wheatley's Chaotic Tests",
       "category": [
         "Milestones",
@@ -770,7 +770,7 @@
       "requires": ""
     },
     {
-      "name": "Milestone : Out of Bounds",
+      "name": "Milestone : Creative Death",
       "region": "Wheatley's Chaotic Tests",
       "category": [
         "Milestones",

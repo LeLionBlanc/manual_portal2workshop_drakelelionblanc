@@ -69,14 +69,14 @@ Completing `Test Chamber #0` is what gets you out. That location is forced to ho
 
 | Region | Theme | Opened by | Chambers | First Contact | Mastery | Milestone |
 | --- | --- | --- | --- | --- | --- | --- |
-| **Enrichment Center** | Portal 1 mechanics | `Enrichment Center Clearance` | `#1 .. #13` | Cube on a Button, Emancipation Grid, Cube Dispenser, Timed Button | Purist, Use Gravity | Name Your Cube, Chamber Sign Read |
-| **Personal Glad0s Test** | Portal 2 early game mechanics | `Glad0s Testing Clearance` | `#1 .. #13` | Thermal Discouragement Beam, Aerial Faith Plate, Hard Light Bridge, Excursion Funnel | No Floor, Laser Yourself | Overgrown Chamber Cleared, GLaDOS Heard |
+| **Enrichment Center** | Portal 1 mechanics | `Enrichment Center Clearance` | `#1 .. #13` | Cube on a Button, Emancipation Grid, Long Fall Boots, 3 Buttons | Purist, Use Gravity | Companion Cube, Chamber Sign Read |
+| **Personal Glad0s Test** | Portal 2 early game mechanics | `Glad0s Testing Clearance` | `#1 .. #13` | Reflect Cube, Aerial Faith Plate, Hard Light Bridge, Tractor Beem | Bridge Execution, Laser Yourself | Overgrown Chamber Cleared, GLaDOS Heard |
 | **Old Aperture Rooms** | Mechanics found after falling in abandonned aperture | `Old Aperture Clearance` | `#1 .. #13` | Repulsion Gel, Propulsion Gel, Conversion Gel | Gels, Overpaint | Cave Johnson Heard, Pellet to the Face |
-| **Wheatley's Chaotic Tests** | Dangerous stuffs | `Wheatley Maintenance Clearance` | `#1 .. #13` | Crushers, Toxic Goo, Turret | Triple Threat, Creative Death | Jury-Rigged Chamber Cleared, Out of Bounds |
+| **Wheatley's Chaotic Tests** | Dangerous stuffs | `Wheatley Maintenance Clearance` | `#1 .. #13` | Crushers, Toxic Goo, Turret | Triple Threat, Deathsanity | Weathley Design, Creative Death |
 | **Final Exam** | Graduation | all 5 Diplomas | `#1 .. #5` | `Graduation Ceremony`, the goal | | |
 
-At full size that is 52 chambers plus the tutorial map, 3 Tutorial, 16 First Contact, 8 Mastery,
-8 Milestone, the Final Exam chambers and the goal: **89 + `final_exam_count` locations**.
+At full size that is 52 chambers plus the tutorial map, 3 Tutorial, 14 First Contact, 8 Mastery,
+8 Milestone, the Final Exam chambers and the goal: **87 + `final_exam_count` locations**.
 
 See heck References for detail on challenges.
 
@@ -93,7 +93,7 @@ See heck References for detail on challenges.
 | `Auto-Win Chamber` | scales | Tick one `Test Chamber` without playing a map. Bail out of a roll you hate. |
 | `Re-roll` | scales | Re-roll any map you want. |
 | `Force Reset` | scales | **Trap.** Abandon the map you are on and roll a new one. |
-| `Cave Johnson Pep Talk` | scales | Nothing. It is the filler the rare checks are locked to. |
+| `Cave Johnson Pep Talk` | scales | Nothing. Pure filler. |
 | `Lemons` | the remainder | Nothing. When life gives you lemons. |
 
 ## Options
@@ -142,37 +142,31 @@ of `chamber_count`.
 
 ### Enrichment Center
 
-*Clean modern Aperture: cubes, buttons, grids.* 
-
 | Challenge | How to tick it |
 | --- | --- |
 | `First Contact : Cube on a Button` | Finish a map whose solution runs through a cube sitting on a floor button. |
-| `First Contact : Emancipation Grid` | Destroy an object by pushing it through an emancipation grid, then solve the map anyway. |
-| `First Contact : Cube Dispenser` | Finish a map where a dispenser hands you a cube. |
-| `First Contact : Timed Button` | Finish a map where a countdown button puts you under pressure. |
+| `First Contact : Emancipation Grid` | Destroy an object by pushing it through an emancipation grid then finish the map. |
+| `First Contact : Long Fall Boots` | Take a huge fall then finish the map. |
+| `First Contact : 3 Buttons` | Press a button 3 times (not a floored one) then finish the map. |
 | `Mastery : Purist` | Finish a map that uses no advanced mechanic: cubes, buttons, portals and doors only. |
-| `Mastery : Use Gravity` | Cross a gap with a fling: fall into a portal, come out carrying the speed. No bridge, no funnel, no plate. |
-| `Milestone : Name Your Cube` | Give a cube a name, keep it alive for the whole map, then incinerate it at the very end. |
+| `Mastery : Use Gravity` | Propulse yourself in the Test Chamber using portal and gravity. |
+| `Milestone : Companion Cube` | Give a cube a name, then destroy it. |
 | `Milestone : Chamber Sign Read` | Read the Aperture signage panel that announces the chamber's mechanics. |
 
 ### Personal Glad0s Test
 
-*Light and energy: lasers, bridges, funnels.*
-
 | Challenge | How to tick it |
 | --- | --- |
-| `First Contact : Thermal Discouragement Beam` | Finish a map where the laser is unavoidable, on its own or through a redirection cube. |
+| `First Contact : Reflect Cube` | Finish a map that uses a reflect cube on a laser |
 | `First Contact : Aerial Faith Plate` | Finish a map that uses a faith plate. |
 | `First Contact : Hard Light Bridge` | Finish a map that uses a light bridge. |
-| `First Contact : Excursion Funnel` | Finish a map that uses a funnel, either polarity. |
-| `Mastery : No Floor` | Cross a gap you cannot walk over, carried by a bridge, a funnel or a faith plate. |
+| `First Contact : Tractor Beem` | Finish a map that uses a Tractor Beem. |
+| `Mastery : Bridge Execution` | Destroy something (cube, ball, turret) using a bridge (either push or disable to make them fall) |
 | `Mastery : Laser Yourself` | Send the laser through a portal and take it in the face. On purpose. |
 | `Milestone : Overgrown Chamber Cleared` | Finish a ruined map, overgrown or visibly abandoned. |
 | `Milestone : GLaDOS Heard` | Get commented on by GLaDOS during a test. |
 
 ### Old Aperture Rooms
-
-*The gels, and Cave Johnson's era.*
 
 | Challenge | How to tick it |
 | --- | --- |
@@ -180,22 +174,22 @@ of `chamber_count`.
 | `First Contact : Propulsion Gel` | Finish a map that uses orange gel. |
 | `First Contact : Conversion Gel` | Finish a map that uses white gel. |
 | `Mastery : Gels` | Finish a map that uses two different gels. Cleansing gel does not count as one of the two. |
-| `Mastery : Overpaint` | Paint far more surface than the puzzle asks for, well past what you need, then finish the map anyway. |
-| `Milestone : Cave Johnson Heard` | Listen to a Cave Johnson recording, original or written by the mapper. |
-| `Milestone : Pellet to the Face` | Take an energy pellet in the face. The most Portal 1 death there is. |
+| `Mastery : Overpaint` | Paint far more surface than the puzzle asks for, well past what you need. |
+| `Milestone : Cave Johnson Heard` | Listen to a Cave Johnson recording. |
+| `Milestone : Pellet to the Face` | Take an energy pellet in the face. |
 
 ### Wheatley's Chaotic Tests
 
-*Hazards and dangerous stuffs* 
 | Challenge | How to tick it |
 | --- | --- |
 | `First Contact : Crushers` | Finish a map that uses crushers or lethal pistons. |
 | `First Contact : Toxic Goo` | Finish a map where the goo is a real hazard, not scenery under a walkway. |
 | `First Contact : Turret` | Take out an active turret, or escape it and finish the map. |
-| `Mastery : Triple Threat` | Finish a map that uses three distinct advanced mechanics. |
-| `Mastery : Creative Death` | Die by combining two mechanics. The only check in the run where dying pays. |
-| `Milestone : Jury-Rigged Chamber Cleared` | Finish a map cobbled together Wheatley-style: crooked geometry, mismatched parts, an improvised chamber. |
-| `Milestone : Out of Bounds` | Get outside the map's boundaries. Go where the mapper did not expect you, and come back. |
+| `Mastery : Triple Threat` | Finish a map that uses three distinct stuff that wants to kill you. |
+| `Mastery : Deathsanity` | Die by falling, turrets and crushed |
+| `Milestone : Weathley Design` | Finish a map designed by Wheatley: low effort or ugly looking. |
+| `Milestone : Creative Death` | Die by combining two mechanics. |
+
 
 ### Final Exam
 
